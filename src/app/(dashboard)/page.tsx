@@ -1,29 +1,32 @@
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import { buttonVariants } from '@/components/ui/button'
-import { ArrowRight } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <>
       <MaxWidthWrapper className="mb-12 mt-28 flex flex-col items-center justify-center text-center sm:mt-40">
-        <div className="max-w-flex mx-auto mb-4 flex items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
+        <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
           <p className="text-sm font-semibold text-gray-700">
-            {' '}
-            Quill is now public
+            Quill is now public!
           </p>
         </div>
-        <h1 className="lg:text7xl max-w-4xl text-5xl font-bold md:text-6xl">
-          Chat with your <span className="text-blue-600">documents</span>in
-          seconds!
+        <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
+          Chat with your <span className="text-blue-600">documents</span> in
+          seconds.
         </h1>
         <p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-          Quill allows you to have conversations with any pdf document. Simply
+          Quill allows you to have conversations with any PDF document. Simply
           upload your file and start asking questions right away.
         </p>
+
         <Link
-          className={buttonVariants({ size: 'lg', className: 'mt-5' })}
+          className={buttonVariants({
+            size: 'lg',
+            className: 'mt-5',
+          })}
           href="/dashboard"
           target="_blank"
         >
@@ -32,7 +35,6 @@ export default function Home() {
       </MaxWidthWrapper>
 
       {/* value proposition section */}
-
       <div>
         <div className="relative isolate">
           <div
