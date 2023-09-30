@@ -27,6 +27,15 @@ const Navbar = () => {
               >
                 Pricing
               </Link>
+              <Link
+                href="/test"
+                className={buttonVariants({
+                  variant: 'ghost',
+                  size: 'sm',
+                })}
+              >
+                Test
+              </Link>
               <UserButton afterSignOutUrl="/" />
             </>
           </div>
